@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .amount-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .amount-input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  body{
+    font-family: 'Nunito', sans-serif;
+    padding: 50px;
+  }
+  /* .card{
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+  } */
+  
+  .card:hover{
+       transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  
+  .card h3{
+    font-weight: 600;
+  }
+  
+  .card img{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    max-height: 120px;
+  }
+  
+  .card-1{
+    background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  .card-2{
+     background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  .card-3{
+     background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  @media(max-width: 990px){
+    .card{
+      margin: 20px;
+    }
+  } 
